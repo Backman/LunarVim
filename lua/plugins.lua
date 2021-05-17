@@ -160,4 +160,14 @@ return require("packer").startup(function(use)
         -- use {'mattn/webapi-vim', opt = true}
     end
 
+
+    -- Backman stuff
+    use {"folke/tokyonight.nvim", opt = true}
+    use {"folke/lsp-colors.nvim", opt = true}
+    use {"folke/todo-comments.nvim", opt = true}
+
+    -- Backman Stuff
+    require_plugin("tokyonight.nvim")
+    require_plugin("lsp-colors.nvim")
+    require_plugin("todo-comments.nvim")
 end)

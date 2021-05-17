@@ -19,7 +19,7 @@ require('lv-gitsigns')
 require('lv-treesitter')
 require('lv-matchup')
 require('lv-autopairs')
-require('lv-rnvimr')
+-- require('lv-rnvimr')
 require('lv-which-key')
 require('lv-lsp-rooter')
 require('lv-zen')
@@ -33,6 +33,13 @@ if O.extras then
     require('lv-symbols-outline')
 end
 
+
+
+-- Backman stuff
+require('lv-lsp-colors')
+require('lv-todo-comment')
+require('lv-trouble')
+require('lv-zen-mode')
 
 
 -- TODO is there a way to do this without vimscript
