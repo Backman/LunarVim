@@ -70,3 +70,39 @@ vim.cmd('vnoremap P "0P')
 
 -- Toggle the QuickFix window
 vim.api.nvim_set_keymap('', '<C-q>', ':call QuickFixToggle()<CR>', {noremap = true, silent = true})
+
+vim.api.nvim_set_keymap('n', ';', ':', {noremap = true, silent = true})
+
+-- Move selected line / block of text in visual mode
+vim.api.nvim_set_keymap("x", "K", ":move \"<-2<CR>gv-gv", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("x", "J", ":move \">+1<CR>gv-gv", {noremap = true, silent = true})
+
+
+vim.api.nvim_set_keymap("n", "B", "^", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "E", "$", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("v", "B", "^", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("v", "E", "$", {noremap = true, silent = true})
+
+vim.api.nvim_set_keymap("n", "dab", "]}v%kd", {noremap = true, silent = true})
+
+vim.api.nvim_set_keymap("n", "<S-Enter>", "O<ESC>j", {noremap = false, silent = true})
+vim.api.nvim_set_keymap("n", "<Enter>", "o<ESC>k", {noremap = false, silent = true})
+
+-- Map Ctrl-Backspace to delete the previous word in insert mode
+vim.api.nvim_set_keymap("!", "<C-BS>", "<C-w>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("!", "<C-h>", "<C-w>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<C-w>", "<C-\\><C-o>dB", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<C-BS>", "<C-\\><C-o>db", { noremap = true, silent = true })
+
+--Add move line shortcuts
+vim.api.nvim_set_keymap("n", "<A-j>", ":m .+1<CR>==", { noremap = true})
+vim.api.nvim_set_keymap("n", "<A-k>", ":m .-2<CR>==", { noremap = true})
+vim.api.nvim_set_keymap("i", "<A-j>", "<Esc>:m .+1<CR>==gi", { noremap = true})
+vim.api.nvim_set_keymap("i", "<A-k>", "<Esc>:m .-2<CR>==gi", { noremap = true})
+vim.api.nvim_set_keymap("v", "<A-j>", ":m \">+1<CR>gv=gv", { noremap = true})
+vim.api.nvim_set_keymap("v", "<A-k>", ":m \"<-2<CR>gv=gv", { noremap = true})
+
+if vim.fn.has("win32") or vim.fn.has("win64") then
+	vim.api.nvim_set_keymap("n", "<C-z>", "<Nop>", { noremap = false, silent = true })
+end
+

@@ -82,3 +82,29 @@ nmap gcc <Plug>VSCodeCommentaryLine
 " Simulate same TAB behavior in VSCode
 nmap <Tab> :Tabnext<CR>
 nmap <S-Tab> :Tabprev<CR>
+
+nnoremap ; :
+vnoremap ; :
+
+nnoremap gk gt
+nnoremap gj gT
+
+nnoremap j gj
+nnoremap k gk
+
+" Map Ctrl-Backspace to delete the previous word in insert mode
+noremap! <C-BS> <C-w>
+noremap! <C-h> <C-w>
+inoremap <C-w> <C-\><C-o>dB
+inoremap <C-BS> <C-\><C-o>db
+
+nnoremap B ^
+nnoremap E $
+vnoremap B ^
+vnoremap E $
+
+nnoremap dab ]}v%kd
+
+nmap <S-Enter> O<ESC>j
+nmap <Enter> o<ESC>k
+
