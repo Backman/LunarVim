@@ -42,6 +42,8 @@ require('lv-trouble')
 require('lv-zen-mode')
 require('lv-colorizer')
 require('lv-lualine')
+require('lv-neogit')
+require('lv-diffview')
 
 -- TODO is there a way to do this without vimscript
 vim.cmd('source '..CONFIG_PATH..'/vimscript/functions.vim')

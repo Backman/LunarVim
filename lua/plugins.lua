@@ -172,4 +172,8 @@ return require("packer").startup(function(use)
     require_plugin("gruvbox-flat.nvim")
     use {"hoob3rt/lualine.nvim", opt = true}
     require_plugin("lualine.nvim")
+    use {"TimUntersberger/neogit", opt = true}
+    require_plugin("neogit")
+    use {"sindrets/diffview.nvim", opt = true}
+    require_plugin("diffview.nvim")
 end)
