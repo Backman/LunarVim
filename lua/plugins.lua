@@ -163,11 +163,13 @@ return require("packer").startup(function(use)
 
     -- Backman stuff
     use {"folke/tokyonight.nvim", opt = true}
-    use {"folke/lsp-colors.nvim", opt = true}
-    use {"folke/todo-comments.nvim", opt = true}
-
-    -- Backman Stuff
     require_plugin("tokyonight.nvim")
+    use {"folke/lsp-colors.nvim", opt = true}
     require_plugin("lsp-colors.nvim")
+    use {"folke/todo-comments.nvim", opt = true}
     require_plugin("todo-comments.nvim")
+    use {"eddyekofo94/gruvbox-flat.nvim", opt = true}
+    require_plugin("gruvbox-flat.nvim")
+    use {"hoob3rt/lualine.nvim", opt = true}
+    require_plugin("lualine.nvim")
 end)
