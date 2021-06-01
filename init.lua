@@ -34,12 +34,10 @@ if O.extras then
 end
 
 
-
 -- Backman stuff
 require('lv-lsp-colors')
 require('lv-todo-comment')
 require('lv-trouble')
-require('lv-zen-mode')
 require('lv-colorizer')
 require('lv-lualine')
 require('lv-neogit')
