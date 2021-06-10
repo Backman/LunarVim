@@ -176,4 +176,6 @@ return require("packer").startup(function(use)
     require_plugin("neogit")
     use {"sindrets/diffview.nvim", opt = true}
     require_plugin("diffview.nvim")
+    use {"rktjmp/lush.nvim", opt = true}
+    require_plugin("lush.nvim")
 end)
