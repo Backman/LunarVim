@@ -180,4 +180,6 @@ return require("packer").startup(function(use)
     require_plugin("lush.nvim")
     use {"sainnhe/everforest", opt = true}
     require_plugin("everforest")
+    use {"ziglang/zig.vim", opt = true}
+    require_plugin("zig.vim")
 end)
