@@ -178,4 +178,6 @@ return require("packer").startup(function(use)
     require_plugin("diffview.nvim")
     use {"rktjmp/lush.nvim", opt = true}
     require_plugin("lush.nvim")
+    use {"sainnhe/everforest", opt = true}
+    require_plugin("everforest")
 end)

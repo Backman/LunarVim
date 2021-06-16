@@ -69,7 +69,7 @@ vim.cmd('vnoremap P "0P')
 -- ]])
 
 -- Toggle the QuickFix window
-vim.api.nvim_set_keymap('', '<C-q>', ':call QuickFixToggle()<CR>', {noremap = true, silent = true})
+-- vim.api.nvim_set_keymap('', '<C-q>', ':call QuickFixToggle()<CR>', {noremap = true, silent = true})
 
 vim.api.nvim_set_keymap('n', ';', ':', {noremap = true, silent = true})
 
