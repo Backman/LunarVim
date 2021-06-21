@@ -60,7 +60,7 @@ return require("packer").startup(function(use)
 
     -- Explorer
     use {"kyazdani42/nvim-tree.lua", opt = true}
-    use {"ahmedkhalf/lsp-rooter.nvim", opt = true} -- with this nvim-tree will follow you
+    -- use {"ahmedkhalf/lsp-rooter.nvim", opt = true} -- with this nvim-tree will follow you
     -- TODO remove when open on dir is supported by nvimtree
     use "kevinhwang91/rnvimr"
 
@@ -116,7 +116,7 @@ return require("packer").startup(function(use)
     require_plugin("nvim-web-devicons")
     require_plugin("galaxyline.nvim")
     require_plugin("barbar.nvim")
-    require_plugin('lsp-rooter.nvim')
+    -- require_plugin('lsp-rooter.nvim')
     require_plugin("TrueZen.nvim")
     require_plugin("nvim-ts-context-commentstring")
 
